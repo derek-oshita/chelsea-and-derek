@@ -5,7 +5,7 @@ export default function NavLogo() {
     <div className="container items-center pb-4">
       <div className="container w-full px-4">
         <Image
-          src="/geometric1.svg"
+          src="/geometric_logo.svg"
           alt="geometric"
           width={0}
           height={0}

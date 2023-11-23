@@ -1,11 +1,13 @@
 import Nav from "@/components/molecules/Nav";
+import HomepageHero from "@/components/atoms/HomepageHero";
 
 export default function Home() {
   return (
     <main>
-      <Nav>
-
-      </Nav>
+      <section className="flex">
+        <Nav/>
+        <HomepageHero />
+      </section>
     </main>
   );
 };
