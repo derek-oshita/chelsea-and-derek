@@ -1,11 +1,11 @@
-import Sidenav from "@/components/molecules/Sidenav";
+import Nav from "@/components/molecules/Nav";
 
 export default function Home() {
   return (
     <main>
-      <Sidenav>
+      <Nav>
 
-      </Sidenav>
+      </Nav>
     </main>
   );
 };
