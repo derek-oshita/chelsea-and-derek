@@ -1,40 +1,44 @@
-import NavItemCell from "@/components/atoms/navItemCell";
+import NavItemCell from "@/components/atoms/NavItemCell";
 
 
 export default function Nav({ children }) {
-    const navItems = [
-        {
-            title: 'Home',
-            linkTo: ''
+  const navItems = [
+    {
+      id: 'home',
+      title: 'Home',
+      linkTo: ''
 
-        },
-        {
-            title: 'When and Where',
-            linkTo: 'when-and-where'
+    },
+    {
+      id: 'when-and-where',
+      title: 'When and Where',
+      linkTo: 'when-and-where'
 
-        },
-        {
-            title: 'RSVP',
-            linkTo: 'rsvp'
-        },
-    ];
+    },
+    {
+      id: 'rsvp',
+      title: 'RSVP',
+      linkTo: 'rsvp'
+    },
+  ];
 
 
-    return (
-        <nav className="flex">
-            <div className="container mx-auto">
-                This is our logo
-            </div>
-            <div className="container flex mx-auto">
-                { navItems.map(({ linkTo, title}) => {
-                    return (
-                        <NavItemCell
-                            linkTo={linkTo}
-                            title={title}
-                        />
-                    );
-                }) }
-            </div>
-        </nav>
-    );
+  return (
+    <nav className="flex">
+      <div className="container mx-auto">
+          This is our logo
+      </div>
+      <div className="container flex mx-auto">
+        { navItems.map(({ id, linkTo, title}) => {
+          return (
+            <NavItemCell
+              key={id}
+              linkTo={linkTo}
+              title={title}
+            />
+          );
+        }) }
+      </div>
+    </nav>
+  );
 }
