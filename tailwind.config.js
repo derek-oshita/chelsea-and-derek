@@ -7,8 +7,13 @@ module.exports = {
   ],
   theme: {
     screens: {
+      'xxs': '0px',
+      // iphone X
+      'xs': '414px',
+      // tablet
       'sm': '640px',
       'md': '768px',
+      // laptop
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px',

@@ -21,7 +21,7 @@ export default function NavList() {
     },
   ];
   return (
-    <ul className="relative m-0 list-none px-[0.2rem]" data-te-sidenav-menu-ref>
+    <div className="container flex-col" >
       { navItems.map(({ id, linkTo, title}) => {
         return (
           <NavItemCell
@@ -31,6 +31,6 @@ export default function NavList() {
           />
         );
       }) }
-    </ul>
+    </div>
   );
 }

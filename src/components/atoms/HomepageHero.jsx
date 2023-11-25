@@ -2,27 +2,35 @@ import Image from "next/image";
 
 export default function HomepageHero() {
   return (
-    <div className="container h-full w-full columns-2">
-      <div className="container w-full">
+    <div className="container h-full w-full xxs:columns-1 sm:columns-3 p-4">
+      <div className="container w-full h-full">
         <Image
           src="/hero1.jpeg"
           alt="geometric"
-          width={0}
-          height={0}
+          width={300}
+          height={300}
           priority={true}
-          sizes="100vw"
-          style={{ width: '100%', height: '100%' }}
+          style={{ objectFit: 'contain' }}
         />
       </div>
-      <div className="container w-full">
+      <div className="container xxs:hidden sm:block  w-full h-full">
         <Image
-          src="/hero2.jpg"
+          src="/hero1.jpeg"
           alt="geometric"
-          width={0}
-          height={0}
+          width={300}
+          height={300}
           priority={true}
-          sizes="100vw"
-          style={{ width: '100%', height: '100%' }}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+      <div className="container xxs:hidden sm:block  w-full h-full">
+        <Image
+          src="/hero1.jpeg"
+          alt="geometric"
+          width={300}
+          height={300}
+          priority={true}
+          style={{ objectFit: 'contain' }}
         />
       </div>
     </div>
