@@ -10,15 +10,14 @@ export default function Nav() {
   return (
     <>
       {/* top nav */}
-      <nav id="topnav" className="xxs:block sm:hidden w-full bg-black">
-        Some items here
-      </nav>
+      {/*<nav id="topnav" className="xxs:block sm:hidden w-full bg-black">*/}
+      {/*  Some items here*/}
+      {/*</nav>*/}
       {/* side nav */}
-      <nav id="sidenav" className="xxs:hidden sm:block h-full w-1/4">
+      <nav id="side-nav" className="xxs:hidden sm:block h-full w-1/4 bg-white">
         <NavLogo/>
         <NavList/>
       </nav>
     </>
-
   );
 }

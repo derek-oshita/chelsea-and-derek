@@ -1,4 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+
+// theme docs:
+// https://tailwindcss.com/docs/theme#customizing-the-default-theme
+
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -13,12 +17,13 @@ module.exports = {
       // tablet
       'sm': '640px',
       'md': '768px',
-      // laptop
+      // laptop and wider
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px',
     },
     colors: {
+      // general
       black: '#000',
       blue: '#1fb6ff',
       purple: '#7e5bef',
@@ -46,6 +51,9 @@ module.exports = {
       widest: '.25em',
     },
     extend: {
+      backgroundImage: {
+        'hero': "url('/charcoal-wood.jpeg')",
+      },
       spacing: {
         '1': '8px',
         '2': '16px',
