@@ -34,15 +34,16 @@ export const TopNav = () => {
         <TopNavButton isMenuOpen={isMenuOpen} onIsMenuOpen={setIsMenuOpen}/>
         <TopNavList />
       </nav>
-      { isMenuOpen && (
-        <div className={`flex flex-col text-end w-full bg-white p-4 ease-in-out duration-500 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-          {navItems.map((i) => {
-            return (
-              <NavItemCell key={i.id} {...i}/>
-            );
-          })}
-        </div>
-      )}
+      <div className={`${isMenuOpen 
+        ? 'flex flex-col text-end w-full h-auto bg-white p-4 transition-all ease-in duration-300' 
+        : 'h-0 transition-all ease-out duration-300'}`
+      }>
+        {isMenuOpen && navItems.map((i) => {
+          return (
+            <NavItemCell key={i.id} {...i}/>
+          );
+        })}
+      </div>
     </>
   );
 };
