@@ -39,7 +39,7 @@ module.exports = {
       dark: '#202020'
     },
     fontFamily: {
-      nav: ['Cormorant']
+      primary: ['Cormorant']
     },
     letterSpacing: {
       tightest: '-.075em',

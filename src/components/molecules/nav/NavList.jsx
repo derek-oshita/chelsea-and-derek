@@ -22,7 +22,7 @@ export default function NavList() {
   ];
   return (
     <div className="container flex-col" >
-      { navItems.map(({ id, linkTo, title}) => {
+      { navItems.map(({ id, linkTo, title }) => {
         return (
           <NavItemCell
             key={id}

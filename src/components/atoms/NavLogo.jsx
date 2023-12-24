@@ -6,7 +6,7 @@ export default function NavLogo() {
       <div className="container w-full px-4">
         <Image
           src="/geometric_logo.svg"
-          alt="geometric"
+          alt="geometric-logo"
           width={0}
           height={0}
           sizes="100vw"
@@ -14,9 +14,9 @@ export default function NavLogo() {
         />
       </div>
       <div className="container text-center w-full px-4">
-        <p className="font-nav text-lg text-dark tracking-widest m-1">DEREK</p>
-        <p className="font-nav text-lg text-dark tracking-widest m-1">AND</p>
-        <p className="font-nav text-lg text-dark tracking-widest m-1">CHELSEA</p>
+        <p className="font-primary text-lg text-dark tracking-widest m-1">DEREK</p>
+        <p className="font-primary text-lg text-dark tracking-widest m-1">AND</p>
+        <p className="font-primary text-lg text-dark tracking-widest m-1">CHELSEA</p>
       </div>
     </div>
   );

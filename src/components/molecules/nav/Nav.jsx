@@ -1,6 +1,6 @@
 import NavItemCell from "@/components/atoms/NavItemCell";
 import NavLogo from "@/components/atoms/NavLogo";
-import NavList from "@/components/molecules/NavList";
+import NavList from "@/components/molecules/nav/NavList";
 
 // https://tw-elements.com/docs/standard/navigation/sidenav/
 
