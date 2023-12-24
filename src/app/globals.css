@@ -7,11 +7,7 @@
 @layer components {
     --padding-container: 2rem;
 
-
     .grid-item-container {
-
-
-
         height: 100%;
         width: 100%;
         padding: 2rem;

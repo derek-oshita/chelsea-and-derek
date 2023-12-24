@@ -1,14 +1,13 @@
 'use client';
 
-import { TopNavLogo } from "@/components/atoms/TopNavLogo";
-import { TopNavList } from "@/components/molecules/nav/TopNavList";
-import { TopNavButton } from "@/components/atoms/TopNavButton";
+import { NavLogo } from "@/components/atoms/nav/NavLogo";
+import { NavList } from "@/components/molecules/NavList";
+import { NavButton } from "@/components/atoms/nav/NavButton";
 import { useState } from "react";
-import NavItemCell from "@/components/atoms/NavItemCell";
+import { NavItemCell } from "@/components/atoms/nav/NavItemCell";
 
-export const TopNav = () => {
+export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const navItems = [
     {
       id: 'when-and-where',
@@ -27,13 +26,15 @@ export const TopNav = () => {
       linkTo: 'rsvp'
     },
   ];
+  
   return (
     <>
       <nav id="top-nav" className="flex items-center justify-between bg-white p-2">
-        <TopNavLogo/>
-        <TopNavButton isMenuOpen={isMenuOpen} onIsMenuOpen={setIsMenuOpen}/>
-        <TopNavList />
+        <NavLogo/>
+        <NavButton isMenuOpen={isMenuOpen} onIsMenuOpen={setIsMenuOpen}/>
+        <NavList navItems={navItems} />
       </nav>
+      {/* TODO: REFACTOR AND CLEANUP */}
       <div className={`${isMenuOpen 
         ? 'flex flex-col text-end w-full h-auto bg-white p-4 transition-all ease-in duration-300' 
         : 'h-0 transition-all ease-out duration-300'}`

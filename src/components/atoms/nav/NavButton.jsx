@@ -1,6 +1,6 @@
 'use client';
 
-export const TopNavButton = ({ isMenuOpen, onIsMenuOpen }) => {
+export const NavButton = ({ isMenuOpen, onIsMenuOpen }) => {
   return (
     <>
       <div className="block lg:hidden">

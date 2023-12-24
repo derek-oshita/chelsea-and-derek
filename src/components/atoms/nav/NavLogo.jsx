@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export const TopNavLogo = () => {
+export const NavLogo = () => {
   return (
     <Link href="/">
       <div className="flex items-center flex-shrink-0 text-white mr-6">

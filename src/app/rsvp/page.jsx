@@ -1,9 +1,14 @@
+import { ContentWrapper } from "@/components/atoms/layout/ContentWrapper";
+import { Nav } from "@/components/organisms/Nav";
+import { Main } from "@/components/atoms/layout/Main";
 
 
-export default function Rsvp () {
-    return (
-        <div>
-                <p>rsvp</p>
-        </div>
-    );
+export default function RSVP () {
+  return(
+    <ContentWrapper>
+      <Nav />
+      <Main>
+      </Main>
+    </ContentWrapper>
+  );
 };

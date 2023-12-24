@@ -1,9 +1,8 @@
+import { ContentWrapper } from "@/components/atoms/layout/ContentWrapper";
 import { Nav } from "@/components/organisms/Nav";
 import { Main } from "@/components/atoms/layout/Main";
-import { ContentWrapper } from "@/components/atoms/layout/ContentWrapper";
 
-
-export default function WhenAndWhere() {
+export default function StayNearby() {
   return(
     <ContentWrapper>
       <Nav />
