@@ -1,13 +1,14 @@
 import { renderClockFaceCell, renderClockFaceLabel } from "@/components/molecules/clock/ClockFaceComponents";
 
 export const ClockFace = ({ type, currentValue }) => {
-  const CLOCK = { [type]: { id: type, val: currentValue, }, };
+  const CLOCK = { [type]: { label: type, val: currentValue, }, };
+  const color = 'black';
 
-  const renderClockFace = ({ id, val }) => {
+  const renderClockFace = ({ label, val }) => {
     return (
-      <div className="bg-clock-border clock-face-container">
-        {renderClockFaceCell({ val })}
-        {renderClockFaceLabel({ label: id })}
+      <div>
+        {renderClockFaceCell({ val, color })}
+        {renderClockFaceLabel({ label, color })}
       </div>
     );
   };

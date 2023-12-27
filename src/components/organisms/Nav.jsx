@@ -10,6 +10,12 @@ export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navItems = [
     {
+      id: 'home',
+      title: 'HOME',
+      linkTo: '/'
+
+    },
+    {
       id: 'when-and-where',
       title: 'WHEN AND WHERE',
       linkTo: 'when-and-where'
@@ -36,7 +42,7 @@ export const Nav = () => {
       </nav>
       {/* TODO: REFACTOR AND CLEANUP */}
       <div className={`${isMenuOpen 
-        ? 'flex flex-col text-end w-full h-auto bg-white p-4 transition-all ease-in duration-300' 
+        ? 'flex flex-col text-end w-full h-auto bg-white p-4 transition ease-in duration-300' 
         : 'h-0 transition-all ease-out duration-300'}`
       }>
         {isMenuOpen && navItems.map((i) => {

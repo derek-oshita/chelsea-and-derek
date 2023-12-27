@@ -53,6 +53,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero': "url('/charcoal-wood.jpeg')",
+        'homepage': "url('/hero_she_annoyed.jpeg')",
       },
       spacing: {
         '1': '8px',

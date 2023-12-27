@@ -21,12 +21,12 @@ export const Clock = ({ expireOn }) => {
   } = useTimer({ autoStart: true, expiryTimestamp: expireOn, onExpire: () => setIsCountDownOver(true) });
 
   return (
-    <div className="grid-item-container">
+    <>
       { isCountDownOver ? (
         <>it be over</>
       ) : (
-        <div className="clock-container">
-          <div className="flex">
+        <div id="clock-container" className="md:w-1/2 text-center flex md:justify-start p-8">
+          <div className="flex md:gap-4 md:flex-col">
             <ClockFace currentValue={IN_DAYS} type={UNIT.DAYS}></ClockFace>
             <ClockFace currentValue={IN_HOURS} type={UNIT.HOURS}></ClockFace>
             <ClockFace currentValue={IN_MINUTES} type={UNIT.MINUTES}></ClockFace>
@@ -34,6 +34,6 @@ export const Clock = ({ expireOn }) => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
