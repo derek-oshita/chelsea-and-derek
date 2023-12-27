@@ -1,14 +1,14 @@
 import { Nav } from "@/components/organisms/Nav";
-import { Main } from "@/components/atoms/layout/Main";
 import { ContentWrapper } from "@/components/atoms/layout/ContentWrapper";
+import { BackgroundVideo } from "@/components/atoms/img/BackgroundVideo";
 
 
 export default function WhenAndWhere() {
   return(
     <ContentWrapper>
       <Nav />
-      <Main>
-      </Main>
+
+      <BackgroundVideo />
     </ContentWrapper>
   );
 };
