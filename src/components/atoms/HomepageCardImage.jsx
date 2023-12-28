@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const HomepageCardImage = () => {
   return (
-    <section id="homepage-card-image" className="card-section">
+    <section id="homepage-card-image-container" className="card-section">
       <Image
         src="/hero1.jpeg"
         alt="chelsea-mila-and-derek"

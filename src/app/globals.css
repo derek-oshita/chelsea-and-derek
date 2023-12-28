@@ -5,17 +5,7 @@
 @tailwind utilities;
 
 @layer components {
-    --padding-container: 2rem;
 
-    #homepage-card {
-        width: 20rem;
-        height: 10rem;
-
-    }
-
-    .card-section {
-
-    }
 
     .grid-item-container {
         height: 100%;
