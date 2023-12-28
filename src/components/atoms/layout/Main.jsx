@@ -1,6 +1,6 @@
 export const Main = ({ children }) => {
   return (
-    <main className="h-dvh w-screen">
+    <main id="main-container" className="main-container w-screen h-5/6">
       {children}
     </main>
   );

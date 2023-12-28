@@ -35,7 +35,7 @@ export const Nav = () => {
   
   return (
     <>
-      <nav id="top-nav" className="flex items-center justify-between bg-white p-2">
+      <nav id="top-nav" className="flex items-center justify-between bg-white p-2 h-1/6">
         <NavLogo/>
         <NavButton isMenuOpen={isMenuOpen} onIsMenuOpen={setIsMenuOpen}/>
         <NavList navItems={navItems} />

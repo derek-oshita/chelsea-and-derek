@@ -1,3 +1,5 @@
+// https://blog.hubspot.com/website/video-background-css
+
 export const BackgroundVideo = () => {
   return (
     <video id="background-video" autoPlay loop muted poster="https://assets.codepen.io/6093409/river.jpg"  className="h-screen w-screen z-0">
