@@ -1,7 +1,7 @@
 export const renderClockFaceCell = ({ val, color }) => {
   return (
     <div className="container min-w-4 md:text-left my-1">
-      <p className={`font-primary xxs:text-lg sm:text-2xl md:text-3xl lg:text-4xl text-${color} tracking-widest`}>{val}</p>
+      <p className={`font-primary xxs:text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl text-${color} tracking-widest`}>{val}</p>
     </div>
   );
 };

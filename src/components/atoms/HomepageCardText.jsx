@@ -7,7 +7,7 @@ export const HomepageCardText = () => {
       <article>
         <Clock expireOn={WEDDING_DATE} />
       </article>
-      <article className="xxs:p-8 sm:pt-0 md:p-8 font-primary text-center md:text-left xxs:text-xs lg:text-sm tracking-widest">
+      <article className="xxs:p-8 xs:py-0 md:p-8 font-primary text-center md:text-left xxs:text-xs lg:text-sm tracking-widest">
         <p>OCTOBER 5, 2024</p>
         <p>BIG SUR, CA</p>
       </article>
