@@ -1,6 +1,6 @@
 import { Clock } from "@/components/organisms/Clock";
 
-export const HompageCardText = () => {
+export const HomepageCardText = () => {
   const WEDDING_DATE = new Date('2024-10-05');
 
 

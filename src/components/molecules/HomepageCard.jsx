@@ -1,13 +1,12 @@
 import { HomepageCardImage } from "@/components/atoms/HomepageCardImage";
-import { HompageCardText } from "@/components/atoms/HompageCardText";
+import { HomepageCardText } from "@/components/atoms/HomepageCardText";
 
 export const HomepageCard = () => {
   return (
-
     <div id="card-container" className="h-full w-full flex justify-center items-center">
-      <div id="homepage-card" className="flex xs:flex-col md:flex-row rounded overflow-hidden md:shadow-lg">
+      <div id="homepage-card" className="flex flex-col md:flex-row md:shadow-lg rounded overflow-hidden ">
         <HomepageCardImage />
-        <HompageCardText />
+        <HomepageCardText />
       </div>
     </div>
   );

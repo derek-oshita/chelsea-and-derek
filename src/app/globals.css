@@ -5,16 +5,11 @@
 @tailwind utilities;
 
 @layer components {
-    --nav-height: 7rem;
-
-    .main-container {
-
-    }
-
+    --padding-container: 2rem;
 
     #homepage-card {
         width: 20rem;
-        height: auto;
+        height: 10rem;
 
     }
 
