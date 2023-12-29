@@ -64,6 +64,9 @@ module.exports = {
         '6': '48px',
         '128': '32rem',
         '144': '36rem',
+        '152': '44rem',
+        '156': '48rem',
+        '160': '52rem',
       },
       borderRadius: {
         '4xl': '2rem',

@@ -1,13 +1,13 @@
 import { HomepageCardImage } from "@/components/atoms/HomepageCardImage";
 import { HomepageCardText } from "@/components/atoms/HomepageCardText";
+import { CardContainer } from "@/components/atoms/layout/CardContainer";
 
 export const HomepageCard = () => {
+  const ID = 'homepage';
   return (
-    <div id="card-container" className="h-full w-full flex justify-center items-center">
-      <div id="homepage-card" className="flex flex-col md:flex-row md:shadow-lg rounded overflow-hidden ">
-        <HomepageCardImage />
-        <HomepageCardText />
-      </div>
-    </div>
+    <CardContainer id={ID}>
+      <HomepageCardImage />
+      <HomepageCardText />
+    </CardContainer>
   );
 };
