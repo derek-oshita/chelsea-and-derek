@@ -1,6 +1,6 @@
 import { CardContainer } from "@/components/atoms/layout/CardContainer";
 import { WhenAndWhereCardVideo } from "@/components/atoms/WhenAndWhereCardVideo";
-import { WhenAndWhereCardText } from "@/components/WhenAndWhereCardText";
+import { WhenAndWhereCardText } from "@/components/atoms/WhenAndWhereCardText";
 
 export const WhenAndWhereCard = () => {
   const ID = 'when-and-where';

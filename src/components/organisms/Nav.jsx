@@ -22,6 +22,12 @@ export const Nav = () => {
 
     },
     {
+      id: 'stay-nearby',
+      title: 'STAY NEARBY',
+      linkTo: 'stay-nearby'
+
+    },
+    {
       id: 'rsvp',
       title: 'RSVP',
       linkTo: 'rsvp'

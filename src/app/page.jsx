@@ -1,7 +1,7 @@
 import { Nav } from "@/components/organisms/Nav";
 import { ContentWrapper } from "@/components/atoms/layout/ContentWrapper";
 import { Main } from "@/components/atoms/layout/Main";
-import { HomepageCard } from "@/components/molecules/HomepageCard";
+import { HomepageCard } from "@/components/molecules/cards/HomepageCard";
 
 export default function Home() {
   return (
