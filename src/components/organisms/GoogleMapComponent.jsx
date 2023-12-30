@@ -1,54 +1,41 @@
 'use client';
 
-import { useCallback, useState } from "react";
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import { useState } from "react";
+import { GoogleMap, MarkerF, useJsApiLoader } from '@react-google-maps/api';
 import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
+import { LOCATIONS, VENUE } from "@/data";
 
+// https://www.youtube.com/watch?v=FS6hEIFTda8&ab_channel=WebDevCody
 const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
 
 export const GoogleMapComponent = () => {
-  const [map, setMap] = useState(null);
+  const [selectedLocation, setSelectedLocation] = useState(null);
+
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: GOOGLE_MAPS_API_KEY,
   });
 
-  const onLoad = useCallback(function callback(map) {
-    // This is just an example of getting and using the map instance!!! don't just blindly copy!
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
+  const markers = Object.values(LOCATIONS).map((l) => {
+    return <MarkerF key={l.id} position={{ lat: l.lat, lng: l.lng }}/>;
+  });
 
-    setMap(map);
-  }, []);
-
-  const onUnmount = useCallback(function callback(map) {
-    setMap(null);
-  }, []);
-
-
-  const containerStyle = {
-    width: '400px',
-    height: '400px'
-  };
-
-
-  const center = {
-    lat: -3.745,
-    lng: -38.523
-  };
-
-  return isLoaded ? (
+  return (
     <section className="card-section xs:w-128 md:w-144 md:w-156 lg:160">
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={10}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-      >
-        { /* Child components, such as markers, info windows, etc. */ }
-        <></>
-      </GoogleMap>
+      {isLoaded ? (
+        <GoogleMap
+          zoom={13}
+          mapContainerStyle={{ width: '25rem', height: '25rem' }}
+          center={{
+            lat: VENUE.LOMA_VISTA_GARDENS.lat,
+            lng: VENUE.LOMA_VISTA_GARDENS.lng
+          }}
+        >
+          {markers}
+        </GoogleMap>
+      ) : (
+        <p>Unable to load Google Map</p>
+      )}
     </section>
-  ) : <></>;
+  );
 };
