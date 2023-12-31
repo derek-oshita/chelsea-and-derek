@@ -2,6 +2,13 @@ import { InfoWindowF } from "@react-google-maps/api";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { MdOutlinePets } from "react-icons/md";
 
+export const renderIcon = icon => {
+  return (
+    <div className="ml-1">
+      {icon}
+    </div>
+  );
+};
 
 export const GoogleMapInfoWindow = ({
   label,
@@ -12,17 +19,6 @@ export const GoogleMapInfoWindow = ({
   isPetFriendly,
   onClose
 }) => {
-
-
-
-  const renderIcon = icon => {
-    return (
-      <div className="ml-1">
-        {icon}
-      </div>
-    );
-  };
-
   return (
     <InfoWindowF
       zIndex={1}

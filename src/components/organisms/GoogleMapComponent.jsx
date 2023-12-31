@@ -52,7 +52,7 @@ export const GoogleMapComponent = () => {
   };
 
   return (
-    <section className="card-section w-128 h-144 sm:w-144 sm:h-144 md:w-152 md:h-152 lg:w-156">
+    <section className="card-section w-128 h-144 sm:w-144 sm:h-144 md:w-152 md:h-152 lg:w-156 md:shadow-lg rounded">
       {isLoaded ? (
         <GoogleMap
           zoom={13}

@@ -4,7 +4,7 @@ export const HomepageCardImage = () => {
   return (
     <section className="card-section">
       <Image
-        src="/hero1.jpeg"
+        src="/img/hero1.jpeg"
         alt="chelsea-mila-and-derek"
         width={450}
         height={450}
