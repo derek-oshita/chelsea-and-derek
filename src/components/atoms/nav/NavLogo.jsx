@@ -6,7 +6,7 @@ export const NavLogo = () => {
     <Link href="/">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <Image
-          src="/top-nav-logo.svg"
+          src="img/nav-logo.svg"
           alt="geometric-logo"
           width={54}
           height={54}

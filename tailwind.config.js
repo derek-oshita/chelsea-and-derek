@@ -36,7 +36,10 @@ module.exports = {
       graylight: '#d3dce6',
       white: '#fff',
       // fall colors
-      dark: '#202020'
+      dark: '#202020',
+      // message state
+      error: '#FFCCCC',
+      success: 'rgb(101, 219, 138)'
     },
     fontFamily: {
       primary: ['Cormorant']
