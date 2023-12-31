@@ -55,7 +55,7 @@ export const GoogleMapComponent = () => {
     <section className="card-section w-128 h-144 sm:w-144 sm:h-144 md:w-152 md:h-152 lg:w-156">
       {isLoaded ? (
         <GoogleMap
-          zoom={12}
+          zoom={13}
           mapContainerStyle={{ width: '100%', height: '100%' }}
           center={{
             lat: VENUE.LOMA_VISTA_GARDENS.lat,
