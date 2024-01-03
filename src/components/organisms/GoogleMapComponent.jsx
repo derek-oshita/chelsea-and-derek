@@ -37,9 +37,6 @@ export const GoogleMapComponent = () => {
     return <MarkerF
       key={l.id}
       position={{ lat: l.lat, lng: l.lng }}
-      options={{
-        color: '#FFFFFF'
-      }}
       onClick={() => handleClickMarker(l.id)}
     />;
   });

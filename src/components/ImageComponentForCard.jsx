@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-export const HomepageCardImage = () => {
+export const ImageComponentForCard = ({ src, alt }) => {
   return (
     <section className="card-section">
       <Image
-        src="/img/hero1.jpeg"
-        alt="chelsea-mila-and-derek"
+        src={src}
+        alt={alt}
         width={450}
         height={450}
         priority
