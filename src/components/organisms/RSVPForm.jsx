@@ -48,19 +48,6 @@ export const RSVPForm = () => {
           </div>
         </form>
       </div>
-      {/*<div>*/}
-      {/*  <form method="post" ref={formRef} onSubmit={handleSubmit} name="google-sheet">*/}
-      {/*    <div className="form-style">*/}
-      {/*      <input type=""  name="first" placeholder='Your Name *' />*/}
-      {/*    </div>*/}
-      {/*    <div className="form-style">*/}
-      {/*      <input type=""  name="last" placeholder='Your Name *' />*/}
-      {/*    </div>*/}
-      {/*    <div className="form-style">*/}
-      {/*      <input type="submit" name="submit" value="Login" />*/}
-      {/*    </div>*/}
-      {/*  </form>*/}
-      {/*</div>*/}
     </section>
   );
 };

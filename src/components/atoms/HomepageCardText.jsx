@@ -3,7 +3,7 @@ import { WEDDING_DATE } from "@/data";
 
 export const HomepageCardText = () => {
   return (
-    <section>
+    <section className="bg-white">
       <article>
         <Clock expireOn={WEDDING_DATE} />
       </article>

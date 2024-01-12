@@ -3,8 +3,10 @@
 import { NavLogo } from "@/components/atoms/nav/NavLogo";
 import { NavList } from "@/components/molecules/NavList";
 import { NavButton } from "@/components/atoms/nav/NavButton";
-import { useState } from "react";
 import { NavItemCell } from "@/components/atoms/nav/NavItemCell";
+import { useState } from "react";
+import { motion } from "framer-motion";
+
 
 export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,6 +35,11 @@ export const Nav = () => {
       linkTo: 'rsvp'
     },
   ];
+
+  const variants = {
+    open: { opacity: 1, x: 0, },
+    closed: { opacity: 0, x: "-100%", },
+  };
   
   return (
     <>
@@ -42,16 +49,19 @@ export const Nav = () => {
         <NavList navItems={navItems} />
       </nav>
       {/* TODO: REFACTOR AND CLEANUP */}
-      <div className={`${isMenuOpen 
-        ? 'flex flex-col text-end w-full h-auto bg-white p-4 transition ease-in duration-300' 
-        : 'h-0 transition-all ease-out duration-300'}`
-      }>
+      <motion.nav
+        animate={isMenuOpen ? 'open' : 'closed'}
+        variants={variants}
+        className={ isMenuOpen
+          ? 'flex flex-col text-end w-full h-auto bg-white p-4'
+          : 'hidden'
+        }>
         {isMenuOpen && navItems.map((i) => {
           return (
             <NavItemCell key={i.id} {...i}/>
           );
         })}
-      </div>
+      </motion.nav>
     </>
   );
 };

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { GoogleMap, MarkerF, useJsApiLoader } from '@react-google-maps/api';
 import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 import { LOCATIONS, VENUE } from "@/data";
@@ -16,11 +16,6 @@ const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
 
 export const GoogleMapComponent = () => {
   const [selectedLocation, setSelectedLocation] = useState(null);
-
-  useEffect(() => {
-    // setSelectedLocation(VENUE.LOMA_VISTA_GARDENS);
-  }, []);
-
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: GOOGLE_MAPS_API_KEY,
@@ -49,7 +44,7 @@ export const GoogleMapComponent = () => {
   };
 
   return (
-    <section className="card-section w-128 h-144 sm:w-144 sm:h-144 md:w-152 md:h-152 lg:w-156 md:shadow-lg rounded">
+    <section className="card-section w-124 h-140 sm:w-140 sm:h-140 md:w-148 md:h-148 lg:w-152 md:shadow-lg rounded">
       {isLoaded ? (
         <GoogleMap
           zoom={13}

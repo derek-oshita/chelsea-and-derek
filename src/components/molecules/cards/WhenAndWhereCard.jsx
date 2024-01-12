@@ -1,3 +1,4 @@
+'use client';
 import { CardContainer } from "@/components/atoms/layout/CardContainer";
 import { WhenAndWhereCardVideo } from "@/components/atoms/WhenAndWhereCardVideo";
 import { WhenAndWhereCardText } from "@/components/atoms/WhenAndWhereCardText";

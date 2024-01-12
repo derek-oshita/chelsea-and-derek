@@ -2,7 +2,7 @@
 
 export const WhenAndWhereCardText = () => {
   return (
-    <section>
+    <section className="bg-white">
       <article className="font-primary text-center md:text-left text-dark tracking-widest mb-2">
         <h2 className="text-lg p-2">WHEN</h2>
         <p className="text-sm px-2 tracking-wide">Saturday</p>

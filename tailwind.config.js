@@ -55,8 +55,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero': "url('/charcoal-wood.jpeg')",
-        'homepage': "url('/hero_she_annoyed.jpeg')",
+        'wood': "url('/img/charcoal-wood.jpeg')",
+        'leaves': "url('/img/autumn-leaves.jpeg')",
       },
       spacing: {
         '1': '8px',
@@ -65,8 +65,11 @@ module.exports = {
         '4': '32px',
         '5': '40px',
         '6': '48px',
+        '124': '30rem',
         '128': '32rem',
+        '140': '34rem',
         '144': '36rem',
+        '148': '38rem',
         '152': '44rem',
         '156': '48rem',
         '160': '52rem',

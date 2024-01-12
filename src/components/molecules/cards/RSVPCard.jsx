@@ -1,13 +1,14 @@
 import { CardContainer } from "@/components/atoms/layout/CardContainer";
-import { RSVPForm } from "@/components/organisms/RSVPForm";
-import { ImageComponentForCard } from "@/components/ImageComponentForCard";
 
 export const RSVPCard = () => {
   const ID = 'rsvp';
   return (
     <CardContainer id={ID}>
-      <ImageComponentForCard src="/img/hero_walking_tree_trunk.jpeg" alt="Derek walks chelsea along the tree trunk" />
-      <RSVPForm />
+      <section className="bg-white h-full flex justify-center items-center">
+        <article className="font-primary text-center md:text-left text-dark tracking-widest">
+          <h1 className="text-lg p-4">COMING SOON...</h1>
+        </article>
+      </section>
     </CardContainer>
   );
 };
