@@ -6,7 +6,6 @@ import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/post
 import { LOCATIONS, VENUE } from "@/data";
 import { GoogleMapInfoWindow } from "@/components/molecules/GoogleMapInfoWindow";
 import { GoogleMapPin } from "@/components/atoms/GoogleMapPin";
-import { LoadingComponent } from "@/components/atoms/LoadingComponent";
 
 // https://www.youtube.com/watch?v=FS6hEIFTda8&ab_channel=WebDevCody
 // old docs: https://tomchentw.github.io/react-google-maps/
@@ -45,7 +44,7 @@ export const GoogleMapComponent = () => {
 
   return (
     <section className="card-section w-124 h-140 sm:w-140 sm:h-140 md:w-148 md:h-148 lg:w-152 md:shadow-lg rounded">
-      {isLoaded ? (
+      {isLoaded && (
         <GoogleMap
           zoom={13}
           mapContainerStyle={{ width: '100%', height: '100%' }}
@@ -60,8 +59,6 @@ export const GoogleMapComponent = () => {
             <GoogleMapInfoWindow onClose={() => setSelectedLocation(null)} {...selectedLocation} />
           )}
         </GoogleMap>
-      ) : (
-        <LoadingComponent />
       )}
     </section>
   );
