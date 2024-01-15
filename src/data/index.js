@@ -1,5 +1,5 @@
 
-export const WEDDING_DATE = new Date('2024-10-05');
+export const WEDDING_DATE = new Date('October 5, 2024');
 
 const setBigSurAddress = (num) => `${num.toString()} CA-1, Big Sur, CA 93920`;
 
@@ -94,27 +94,4 @@ export const LOCATIONS = {
     distanceInMinutes: 5,
     category: 'campground/cabin',
   },
-  POST_RANCH_INN: {
-    id: 'POST_RANCH_INN',
-    label: 'Post Ranch Inn',
-    address: setBigSurAddress('47900'),
-    lat: 36.23076200867909,
-    lng: -121.77182855439327,
-    isPetFriendly: false,
-    url: 'https://postranchinn.com',
-    distanceInMinutes: 4,
-    category: 'luxury',
-  },
-  ALILA_VENTANA_BIG_SUR: {
-    id: 'ALILA_VENTANA_BIG_SUR',
-    label: 'Alila Ventana Big Sur',
-    address: setBigSurAddress('48123'),
-    lat: 36.229348717081045,
-    lng: -121.76036443162455,
-    isPetFriendly: false,
-    url: 'https://hyatt.com/en-US/hotel/california/ventana-big-sur/sjcal',
-    distanceInMinutes: 4,
-    category: 'luxury',
-  },
 };
-
