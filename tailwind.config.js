@@ -13,7 +13,7 @@ module.exports = {
     screens: {
       'xxs': '0px',
       // iphone X
-      'xs': '414px',
+      'xs': '390px',
       // tablet
       'sm': '640px',
       'md': '768px',
@@ -21,6 +21,7 @@ module.exports = {
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px',
+      '3xl': '1921px',
     },
     colors: {
       // general
@@ -56,7 +57,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'wood': "url('/img/charcoal-wood.jpeg')",
-        'leaves': "url('/img/autumn-leaves.jpeg')",
+        'leaves-lg': "url('/img/autumn-leaves.jpeg')",
+        'leaves-3xl': "url('/img/leaves-big.jpeg')",
       },
       spacing: {
         '1': '8px',

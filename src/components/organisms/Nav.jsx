@@ -34,6 +34,11 @@ export const Nav = () => {
       title: 'RSVP',
       linkTo: 'rsvp'
     },
+    {
+      id: 'registry',
+      title: 'REGISTRY',
+      linkTo: 'https://www.honeyfund.com/site/oshita-vanbilliard-10-05-2024'
+    },
   ];
 
   const variants = {
@@ -46,9 +51,9 @@ export const Nav = () => {
       <nav id="top-nav" className="flex items-center justify-between bg-white p-2 md:h-1/6">
         <div id="top-nav-logo-container">
           <NavLogo/>
-          <NavButton isMenuOpen={isMenuOpen} onIsMenuOpen={setIsMenuOpen}/>
         </div>
         <div id="top-nav-items-container">
+          <NavButton isMenuOpen={isMenuOpen} onIsMenuOpen={setIsMenuOpen}/>
           <NavList navItems={navItems} />
         </div>
       </nav>
