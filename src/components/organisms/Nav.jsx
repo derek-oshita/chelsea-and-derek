@@ -44,9 +44,13 @@ export const Nav = () => {
   return (
     <>
       <nav id="top-nav" className="flex items-center justify-between bg-white p-2 md:h-1/6">
-        <NavLogo/>
-        <NavButton isMenuOpen={isMenuOpen} onIsMenuOpen={setIsMenuOpen}/>
-        <NavList navItems={navItems} />
+        <div id="top-nav-logo-container">
+          <NavLogo/>
+          <NavButton isMenuOpen={isMenuOpen} onIsMenuOpen={setIsMenuOpen}/>
+        </div>
+        <div id="top-nav-items-container">
+          <NavList navItems={navItems} />
+        </div>
       </nav>
       {/* TODO: REFACTOR AND CLEANUP */}
       <motion.nav
