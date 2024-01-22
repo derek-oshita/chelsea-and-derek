@@ -7,6 +7,7 @@ export const NavList = ({ navItems }) => {
         { navItems.map(({ id, linkTo, title }) => {
           return (
             <NavItemCell
+              id={id}
               key={id}
               linkTo={linkTo}
               title={title}
