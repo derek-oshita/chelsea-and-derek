@@ -58,7 +58,6 @@ module.exports = {
       backgroundImage: {
         'wood': "url('/img/charcoal-wood.jpeg')",
         'leaves-lg': "url('/img/autumn-leaves.jpeg')",
-        'leaves-3xl': "url('/img/leaves-big.jpeg')",
       },
       spacing: {
         '1': '8px',
