@@ -11,7 +11,7 @@ export const NavLogo = () => {
           width={54}
           height={54}
         />
-        <span className="font-primary text-lg text-dark tracking-widest m-2">DEREK AND CHELSEA</span>
+        <span className="font-primary text-dark tracking-widest m-2 text-sm lg:text-xl 4xl:text-3xl">DEREK AND CHELSEA</span>
       </div>
     </Link>
 

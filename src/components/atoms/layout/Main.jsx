@@ -1,6 +1,7 @@
+
 export const Main = ({ children }) => {
   return (
-    <main id="main-container" className="main-container w-screen md:h-5/6">
+    <main id="main-container" className="w-full h-6/7 flex items-center justify-center">
       {children}
     </main>
   );

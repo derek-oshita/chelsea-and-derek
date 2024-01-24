@@ -1,12 +1,11 @@
 import { GoogleMapComponent } from "@/components/organisms/GoogleMapComponent";
+import { CardContainer } from "@/components/atoms/layout/CardContainer";
 
 export const StayNearbyCard = () => {
   const ID = 'stay-nearby';
   return (
-    <div id={`${ID}-card-container`} className="h-full w-full flex justify-center items-center">
-      <div id={`${ID}-card`} className="flex flex-col md:shadow-lg rounded">
-        <GoogleMapComponent />
-      </div>
-    </div>
+    <CardContainer id={ID}>
+      <GoogleMapComponent />
+    </CardContainer>
   );
 };

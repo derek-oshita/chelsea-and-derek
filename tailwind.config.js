@@ -22,6 +22,11 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
       '3xl': '1921px',
+      '4xl': '2560px'
+    },
+    height: {
+      '1/7': '12vh',
+      '6/7': '88vh'
     },
     colors: {
       // general
@@ -52,7 +57,19 @@ module.exports = {
       normal: '0',
       wide: '.025em',
       wider: '.05em',
+      wider2: '.2em',
       widest: '.25em',
+    },
+    fontSize: {
+      xxs: '0.25rem',
+      xs: '0.6rem',
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.25rem',
+      '2xl': '1.563rem',
+      '3xl': '1.953rem',
+      '4xl': '2.441rem',
+      '5xl': '3.052rem',
     },
     extend: {
       backgroundImage: {

@@ -26,7 +26,7 @@ export const Clock = ({ expireOn }) => {
         <>it be over</>
       ) : (
         <div id="clock-container" className="xxs:hidden text-center xs:flex p-2 justify-center w-full md:justify-start md:p-8">
-          <div className="flex gap-2 flex-row md:flex-col">
+          <div className="flex gap-1 flex-row md:flex-col">
             <ClockFace currentValue={IN_DAYS} type={UNIT.DAYS}></ClockFace>
             <ClockFace currentValue={IN_HOURS} type={UNIT.HOURS}></ClockFace>
             <ClockFace currentValue={IN_MINUTES} type={UNIT.MINUTES}></ClockFace>

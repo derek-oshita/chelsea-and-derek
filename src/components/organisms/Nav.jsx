@@ -48,7 +48,7 @@ export const Nav = () => {
   
   return (
     <>
-      <nav id="top-nav" className="flex items-center justify-between bg-white p-2 md:h-1/6">
+      <nav id="top-nav" className="flex items-center justify-between bg-white p-2 h-1/7">
         <div id="top-nav-logo-container">
           <NavLogo/>
         </div>

@@ -43,7 +43,7 @@ export const GoogleMapComponent = () => {
   };
 
   return (
-    <section className="card-section w-124 h-140 sm:w-140 sm:h-140 md:w-148 md:h-148 lg:w-152 md:shadow-lg rounded">
+    <section className="rounded w-screen xxs:h-[700px] md:w-[768px] md:shadow-lg ">
       {isLoaded && (
         <GoogleMap
           zoom={13}

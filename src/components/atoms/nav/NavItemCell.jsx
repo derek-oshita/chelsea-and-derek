@@ -5,13 +5,13 @@ export const NavItemCell = ({ id, title, linkTo }) => {
   if (isRegistry) {
     return (
       <a href={linkTo} target="_blank" rel="noopener noreferrer" >
-        <p  className="block mt-4 lg:inline-block lg:mt-0 mr-4 font-primary text-xs text-dark tracking-widest">{title}</p>
+        <p  className="font-primary block mt-4 mr-4 text-xs tracking-wider2 lg:text-xs lg:inline-block lg:mt-0 xl:text-sm xl:tracking-widest 4xl:text-xl ">{title}</p>
       </a>
     );
   } else {
     return (
       <Link href={`/${linkTo}`}>
-        <p  className="block mt-4 lg:inline-block lg:mt-0 mr-4 font-primary text-xs text-dark tracking-widest">{title}</p>
+        <p  className="font-primary block mt-4 mr-4 text-xs tracking-wider2 lg:text-xs lg:inline-block lg:mt-0 xl:text-sm xl:tracking-widest 4xl:text-xl ">{title}</p>
       </Link>
     );
   }

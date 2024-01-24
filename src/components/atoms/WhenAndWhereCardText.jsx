@@ -11,8 +11,9 @@ export const WhenAndWhereCardText = () => {
       <article className="font-primary text-center md:text-left text-dark tracking-widest mb-2">
         <h2 className="text-lg p-2">WHERE</h2>
         <a className="text-sm px-2 tracking-wide" href="https://www.lomavistagardens.com/" target="_blank" rel="noopener noreferrer" >
-          <strong>Loma Vista Gardens</strong>
+          Loma Vista
         </a>
+        <p className="text-sm px-2 tracking-wide">Gardens</p>
         <p className="text-sm px-2 tracking-wide">47540 CA-1</p>
         <p className="text-sm px-2 tracking-wide">Big Sur, CA 93920</p>
       </article>
